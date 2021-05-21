@@ -38,7 +38,6 @@ def scanOp(target):
 		for xop in target.findChildren(comment='?*', maxDepth=1):
 			if not xop.isCOMP: #search op without comp
 				children_xops.append(xop)
-		print(children_xops)
 
 		children_ops = children_xops + children_comps
 
